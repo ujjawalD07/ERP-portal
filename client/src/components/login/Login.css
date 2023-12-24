@@ -1,0 +1,62 @@
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+}
+
+.landing-page {
+    /* background-image: url('https://images.unsplash.com/photo-1620496009285-ac853df7b9b6?crop=entropy&cs=srgb&fm=jpg&ixid=M3w1NDQ0MzF8MHwxfHNlYXJjaHwxfHxpaXR8ZW58MHx8fHwxNzAzNDM2ODUxfDA&ixlib=rb-4.0.3'); */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    /* width:100vw; */
+  }
+  
+  .container {
+    text-align: center;
+  }
+  
+  h1{
+    /* margin-top: 2px; */
+    background-color:black;
+    color: #fff;
+    opacity: 50%;
+    max-width: fit-content;
+    display: block;
+    margin: auto;
+    padding: 5px 49px;
+
+  }
+  .login-buttons {
+    margin-top: 20px;
+  }
+  
+  button {
+    padding: 10px 20px;
+    font-size: 16px;
+    margin: 0 10px;
+    cursor: pointer;
+  }
+  
+  .faculty-login {
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    padding:2px;
+    border-radius: 5px;
+    width: 10rem;
+    height:2rem;
+    margin-right: 7px;
+  }
+  
+  .student-login {
+    background-color: #2ecc71;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    width: 10rem;
+    height:2rem;
+    padding: 2px;
+  }
+  

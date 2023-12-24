@@ -22,7 +22,7 @@ app.get("/", (req, res) => {
   res.send("Hello to college erp API");
 });
 mongoose
-  .connect(process.env.CONNECTION_URL, {
+  .connect("mongodb://127.0.0.1:27017/portal", {
     useNewUrlParser: true,
     useUnifiedTopology: true,
   })

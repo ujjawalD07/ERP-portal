@@ -22,6 +22,7 @@ export const adminLogin = async (req, res) => {
     );
     if (!isPasswordCorrect) {
       errors.passwordError = "Invalid Credentials";
+      console.log(password)
       return res.status(404).json(errors);
     }
 
@@ -155,6 +156,7 @@ export const addAdmin = async (req, res) => {
   } catch (error) {
     const errors = { backendError: String };
     errors.backendError = error;
+    console.log(error);
     res.status(500).json(errors);
   }
 };
@@ -209,9 +211,9 @@ export const addDepartment = async (req, res) => {
 
     const newDepartment = await new Department({
       department,
-      departmentCode,
+      departmentCode, 
     });
-
+ 
     await newDepartment.save();
     return res.status(200).json({
       success: true,

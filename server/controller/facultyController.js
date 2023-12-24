@@ -54,9 +54,9 @@ export const updatedPassword = async (req, res) => {
     let hashedPassword;
     hashedPassword = await bcrypt.hash(newPassword, 10);
     faculty.password = hashedPassword;
-    await faculty.save();
+    await faculty.save(); 
     if (faculty.passwordUpdated === false) {
-      faculty.passwordUpdated = true;
+      faculty.passwordUpdated = true; 
       await faculty.save();
     }
 
